@@ -1,5 +1,6 @@
 body {
   width: 1440px;
+  margin: 0;
 }
 
 .container {
@@ -71,4 +72,21 @@ span {
   margin: auto;
   text-align: center;
   padding: 2%;
+}
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+  .container {
+    width: auto;
+    max-width: 375px;
+    height: 667px;
+    background-position: -160px -200px, 160px 450px;
+    background-size: 100%;
+    margin: 0;
+  }
+  .card {
+    min-width: 330px;
+  }
 }
